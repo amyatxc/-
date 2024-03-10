@@ -1,0 +1,15 @@
+/* register.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 100rpx; */
+}
+
+input {
+  width: 80%;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+  border: 1rpx solid #ccc;
+  padding: 0 20rpx;
+}

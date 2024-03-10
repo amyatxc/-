@@ -1,0 +1,70 @@
+/* pages/guoHao/guoHao.wxss */
+.box {
+	margin-bottom: 60rpx;
+}
+
+.info {
+	height: 500rpx;
+	margin: 20rpx;
+	border: 3rpx solid #ccc;
+	border-radius: 20rpx;
+}
+
+.doctor {
+	display: flex;
+	height: 300rpx;
+	border-bottom: 1rpx solid black;
+	margin: 20rpx;
+}
+
+.doctor_info {
+	margin-left: 10rpx;
+}
+
+.icon {
+	width: 240rpx;
+	height: 240rpx;
+	border-radius: 50%;
+	margin-top: 20rpx;
+	margin-right: 20rpx;
+}
+
+.name {
+	font-size: 50rpx;
+	font-weight: bold;
+	margin-top: 40rpx;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30rpx;
+}
+
+.shift {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 150rpx;
+	margin-left: 30rpx;
+}
+
+.patient {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 3rpx solid #ccc;
+	height: 100rpx;
+	margin: 20rpx;
+	border-radius: 20rpx;
+	font-size: 40rpx;
+	font-weight: bold;
+}
+
+.left {
+	margin-left: 20rpx;
+}
+
+.patient_name {
+	margin-right: 20rpx;
+}

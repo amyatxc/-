@@ -1,0 +1,7 @@
+<!--logs.wxml-->
+<view class="container">
+  <input placeholder="请输入账号" bindblur="onUsernameInput" value="{{username}}"></input>
+  <input type="password" placeholder="请输入密码" bindblur="onPasswordInput" value="{{password}}"></input>
+  <input type="password" placeholder="请再次输入密码" bindblur="onConfirmPasswordInput" value="{{confirmPassword}}"></input>
+  <button bindtap="regUserInfo" type="primary">注册</button>
+</view>

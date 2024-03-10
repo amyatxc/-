@@ -1,0 +1,42 @@
+/* pages/contact/contact.wxss */
+.header {
+	display: flex;
+	align-items: center;
+	background-color: skyblue;
+	height: 230rpx;
+	border-bottom: 1rpx solid #ccc;
+}
+
+.icon {
+	margin: 25rpx;
+	width: 150rpx;
+	height: 150rpx;
+	border-radius: 50%;
+}
+
+.username {
+	font-size: 50rpx;
+	font-weight: bold;
+}
+
+.patients {
+	/* background-color: pink; */
+	height: 120rpx;
+	border-bottom: 1rpx solid #ccc;
+	line-height: 120rpx;
+	padding-left: 50rpx;
+	font-size: 40rpx;
+}
+
+.record {
+	/* background-color: #ccc; */
+	height: 120rpx;
+	border-bottom: 1rpx solid #ccc;
+	line-height: 120rpx;
+	padding-left: 50rpx;
+	font-size: 40rpx;
+}
+
+.logout-button {
+	margin-top: 50rpx;
+}

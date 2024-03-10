@@ -1,0 +1,27 @@
+<view wx:if="{{list.length === 0}}">
+  无结果，请重新搜索
+</view>
+
+<view wx:else="{{list.length > 0}}">
+  <view class="doctor-item" wx:for="{{list}}" wx:key="index" bindtap="getYuYue" data-doctor_id="{{item.doctor_id}}">
+    <view class="icon">
+      <image src="{{item.icon}}"/>
+    </view>
+    <view class="info">
+      <view class="header">
+        <text class="doctor-name">{{item.doctor_name}}</text>
+        <view wx:if="{{item.state_msg}}">
+          <view wx:if="{{item.state_msg === '有号'}}" class="have">
+            {{item.state_msg}}
+          </view>
+          <view wx:else="{{item.state_msg === '加号'}}" class="no">
+            {{item.state_msg}}
+          </view>
+        </view>
+      </view>
+      <text>{{item.zc_name}}</text>
+      <text class="num">预约量：{{item.total_yuyue_num}}</text>
+      <text class="text">擅长：{{item.expert}}</text>
+    </view>
+  </view>
+</view>

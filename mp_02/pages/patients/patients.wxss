@@ -1,0 +1,47 @@
+/* pages/patients/patients.wxss */
+.add {
+	display: flex;
+	background-color: #fafafa;
+	height: 160rpx;
+	margin-left: 25rpx;
+}
+
+.addSymbol {
+	line-height: 150rpx;
+	font-size: 100rpx;
+}
+
+.addText {
+	margin-left: 25rpx;
+	line-height: 160rpx;
+	font-size: 36rpx;
+}
+
+.text {
+	height: 120rpx;
+	background-color: #ddd;
+	line-height: 120rpx;
+	padding-left: 25rpx;
+}
+
+.patients-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20rpx;
+	height: 120rpx;
+	border-bottom: 1rpx solid #ddd;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	font-size: 45rpx;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	font-size: 25rpx;
+	color: #a9a9a9 ;
+}

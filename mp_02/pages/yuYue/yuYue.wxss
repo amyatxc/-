@@ -1,0 +1,89 @@
+/* pages/yuYue/yuYue.wxss */
+.doctor-item {
+	display: flex;
+	padding: 30rpx;
+	height: 240rpx;
+	border: 1rpx solid #efefef;
+	background-color: skyblue;
+}
+
+.icon image {
+	width: 150rpx;
+	height: 150rpx;
+	display: block;
+	margin-right: 35rpx;
+	border-radius: 50%;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.doctor-name {
+	font-weight: bold;
+	font-size: 50rpx;
+	margin-right: 35rpx;
+}
+
+.num {
+	font-size: 27rpx;
+}
+
+.text {
+  display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	font-size: 27rpx;
+}
+
+.ill {
+  display: -webkit-box;
+	font-size: 27rpx;
+	flex-wrap: wrap;
+	height: 49rpx;
+	overflow: hidden;
+}
+
+.ill_item {
+	margin-right: 10rpx;
+	background-color: #F0F6F6;
+	color: #666;
+	padding: 8rpx;
+	border-radius: 20%;
+}
+
+.shift {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 150rpx;
+	border-bottom: 1px solid #ddd;
+}
+
+.top {
+	display: flex;
+	padding: 10rpx 30rpx;
+	font-size: 38rpx;
+}
+
+.bottom {
+	display: flex;
+	padding: 10rpx 30rpx;
+	font-size: 28rpx;
+}
+
+.lleft {
+	padding-right: 20rpx;
+}
+
+.right {
+	background-color: rgb(90, 207, 131);
+	color: white;
+	padding: 20rpx;
+	margin-right: 20rpx;
+	border-radius: 15%;
+}

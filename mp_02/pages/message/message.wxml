@@ -1,0 +1,12 @@
+<!--pages/message/message.wxml-->
+<view class="box">
+	<image src="https://imagesbasicinfo.91160.com/upload/unit/logos/yy114.jpg?x-oss-process=image/resize,mfit,h_100,w_100&quot" class="logo"/>
+	<view class="title">深圳市宝安中医院（集团）</view>
+</view>
+
+<view class="container">
+  <input placeholder="请输入账号" bindblur="onUsernameInput" value="{{username}}"></input>
+  <input type="password" placeholder="请输入密码" bindblur="onPasswordInput" value="{{password}}"></input>
+	<button class="login" type="primary" bindtap="loginInfo">登录</button>
+  <button bindtap="regUserInfo">注册</button>
+</view>

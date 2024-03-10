@@ -1,0 +1,15 @@
+<!--pages/contact/contact.wxml-->
+<view class="header">
+	<image src="https://wximg.91160.com/wechat/img/avatar/10.png" class="icon"/>
+  <text class="username">欢迎您：{{username}}</text>
+</view>
+
+<view class="patients" bindtap="gotoPatients">
+	就诊人列表
+</view>
+
+<view class="record" bindtap="gotoRecord">
+	挂号记录
+</view>
+
+<button class="logout-button" bindtap="logout" type="primary">退出登录</button>

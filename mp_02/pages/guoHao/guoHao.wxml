@@ -1,0 +1,86 @@
+<!--pages/guoHao/guoHao.wxml-->
+<view class="add" wx:if="{{is_delete === false}}">
+	<view class="box">
+		<view class="info">
+			<view class="doctor" wx:for="{{doctorInfo}}" wx:key="index">
+				<image src="{{item.icon}}" class="icon"/>
+				<view class="doctor_info">
+					<view class="name">
+						{{item.doctor_name}}
+					</view>
+					<view class="text">
+						<view>
+							{{item.zc_name}}
+						</view>
+						<view>
+							{{item.dep_name}}
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="shift" wx:for="{{shiftInfo}}" wx:key="index">
+				<view class="top">
+					就诊时间：<text>{{item.to_date}}</text>
+					<text wx:if="{{item.time_type === 'am'}}">-上午</text>
+					<text wx:else="{{item.time_type === 'pm'}}">-下午</text>
+				</view>
+				<view class="bottom">
+					挂号费：<text>￥{{item.guahao_amt}}.0</text>
+				</view>
+			</view>
+		</view>
+		<view class="patient">
+			<view class="left">
+				就诊人
+			</view>
+			<view class="patient_name" bindtap="gotoPatients">
+				{{patient_name}}<text decode="{{true}}">&nbsp;</text>>
+			</view>
+		</view>
+	</view>
+
+	<button type="primary" bindtap="sumbit">提交</button>
+</view>
+
+<view class="delete" wx:else="{{is_delete === true}}">
+	<view class="box">
+		<view class="info">
+			<view class="doctor" wx:for="{{recordInfo}}" wx:key="index">
+				<image src="{{item.icon}}" class="icon"/>
+				<view class="doctor_info">
+					<view class="name">
+						{{item.doctor_name}}
+					</view>
+					<view class="text">
+						<!-- <view>
+							{{item.zc_name}}
+						</view> -->
+						<view>
+							{{item.dep_name}}
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="shift" wx:for="{{recordInfo}}" wx:key="index">
+				<view class="top">
+					就诊时间：<text>{{item.to_date}}</text>
+					<text wx:if="{{item.time_type === 'am'}}">-上午</text>
+					<text wx:else="{{item.time_type === 'pm'}}">-下午</text>
+				</view>
+				<view class="bottom">
+					挂号费：<text>￥{{item.guahao_amt}}.0</text>
+				</view>
+			</view>
+		</view>
+		<view class="patient">
+			<view class="left">
+				就诊人
+			</view>
+			<view class="patient_name">
+				{{patient_name}}
+			</view>
+		</view>
+	</view>
+
+	<button type="warn" bindtap="delete">取消挂号</button>
+</view>

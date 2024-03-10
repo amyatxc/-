@@ -1,0 +1,36 @@
+<!--pages/record/record.wxml-->
+<view class="box" wx:for="{{shift_record}}" wx:key="{{item.shiftId}}" data-shiftId="{{item.shiftId}}" bindtap="getShiftId">
+	<view class="header">
+		<image src="{{item.icon}}" class="icon"/>
+		<view class="name">
+			{{item.doctor_name}}
+		</view>
+		<view class="record">
+			<view wx:if="{{item.is_delete === 0}}">
+				待就诊
+			</view>
+			<view wx:if="{{item.is_delete === 1}}">
+				已取消
+			</view>
+			<view wx:if="{{item.is_delete === 2}}">
+				已就诊
+			</view>
+		</view>
+	</view>
+	<view class="text">
+		<view class="dep">
+			门诊：{{item.dep_name}}
+		</view>
+		<view class="time">
+			就诊时间：<text>{{item.to_date}}</text>
+			<text wx:if="{{item.time_type === 'am'}}">--上午</text>
+			<text wx:else="{{item.time_type === 'pm'}}">--下午</text>
+		</view>
+		<view class="patient">
+			就诊人：{{item.patient_name}}
+		</view>
+	</view>
+	<view class="amt">
+		挂号费：￥{{item.guahao_amt}}.0
+	</view>
+</view>

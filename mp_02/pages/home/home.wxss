@@ -1,0 +1,67 @@
+/* pages/home/home.wxss */
+.top {
+	height: 160rpx;
+	/* background-color: skyblue; */
+	font-size: 40rpx;
+	font-weight: bold;
+	padding: 20rpx;
+}
+
+.searchContainer {
+  margin: 10rpx; /* 添加外边距 */
+}
+
+.searchInput {
+	font-size: 30rpx;
+	margin-top: 50rpx;
+  width: 94%; /* 宽度设置为100%以填充父容器 */
+  height: 50rpx;
+  padding: 0 20rpx;
+  border: none; /* 移除边框 */
+  border-radius: 20rpx; /* 设置圆角 */
+  background-color: #ddd; /* 添加背景色 */
+}
+
+.box{
+	display: flex;
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+	height: calc(100vh - 200rpx);
+}
+
+.classList {
+	flex: 1;
+	/* max-height: 200px; */
+	overflow-y: auto;
+	flex-grow: 1;
+	margin-right: 0; /* 取消右侧的外边距 */
+	padding: 0;
+}
+
+.classItem {
+	background-color: #efefef;
+	padding: 30rpx;
+	font-size: 33rpx;
+	border: 1rpx solid #ddd;
+}
+
+.active {
+	background-color: #fff;
+}
+
+.depList {
+	flex: 0 0 30%;
+	/* max-height: 200px; */
+	/* background-color: pink; */
+	overflow-y: auto;
+	flex-grow: 1;
+	margin-left: 0; /* 取消右侧的外边距 */
+	padding: 0;
+}
+
+.depItem {
+	padding: 30rpx;
+	font-size: 33rpx;
+	border: 1rpx solid #ddd;
+}

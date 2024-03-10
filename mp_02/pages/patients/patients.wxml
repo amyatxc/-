@@ -1,0 +1,25 @@
+<!--pages/patients/patients.wxml-->
+<view class="add" bindtap="getAdd">
+	<view class="addSymbol">
+		+
+	</view>
+	<view class="addText">
+		添加就诊人
+	</view>
+</view>
+
+<view class="patientsList">
+	<view class="text">
+		就诊人列表
+	</view>
+	<view class="patients-item" wx:for="{{patientsList}}" wx:key="index" bindtap="CPatients" data-patientid="{{item.patient_id}}">
+		<view class="top">
+			<text class="name">{{item.patient_name}}</text>
+			<text class="phone">手机号：{{item.phone}}</text>
+		</view>
+		<view class="bottom">
+			<text class="address">{{item.address}}</text>
+			<text class="card">身份证：{{item.card}}</text>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,25 @@
+<!-- <button type="primary" bindtap="loginInfo">发起login请求</button>
+<button type="primary" bindtap="postInfo">发起reguser请求</button>
+<button type="primary" bindtap="getClass">发起Class请求</button>
+<button type="primary" bindtap="getDep">发起Dep请求</button> -->
+
+<view class="top">
+	深圳市宝安中医院（集团）
+	<view class="searchContainer">
+		<input class="searchInput" placeholder="请输入关键词" bindblur="onBlur" value="{{inputValue}}"></input>
+	</view>
+</view>
+
+<view class="box">
+	<view class="classList">
+		<view wx:for="{{classList}}" wx:key="index" class="{{['classItem', item.active ? 'active' : '']}}" data-id="{{item.class_id}}" bindtap="getClassId">
+			{{item.class_name}}
+		</view>
+	</view>
+
+	<view class="depList">
+		<view wx:for="{{depList}}" wx:key="index" class="depItem" data-id="{{item.dep_id}}" bindtap="getDepId">
+			{{item.dep_name}}
+		</view>
+	</view>
+</view>

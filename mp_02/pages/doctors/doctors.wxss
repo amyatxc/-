@@ -1,0 +1,66 @@
+/* pages/doctors/doctors.wxss */
+.doctor-item {
+	display: flex;
+	padding: 15rpx;
+	height: 240rpx;
+	border: 1rpx solid #efefef;
+	margin: 15rpx;
+}
+
+.icon image {
+	width: 150rpx;
+	height: 150rpx;
+	display: block;
+	margin-right: 15rpx;
+	border-radius: 50%;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.doctor-name {
+	font-weight: bold;
+	font-size: 40rpx;
+}
+
+.have {
+	background-color: #18CF62;
+	width: 80rpx;
+	height: 55rpx;
+	text-align: center;
+	color: white;
+	line-height: 55rpx;
+	border-radius: 20%;
+}
+
+.no {
+	background-color: #ff9f4f;
+	width: 80rpx;
+	height: 55rpx;
+	text-align: center;
+	color: white;
+	line-height: 55rpx;
+	border-radius: 20%;
+}
+
+.num {
+	font-size: 27rpx;
+}
+
+.text {
+  display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	font-size: 27rpx;
+}

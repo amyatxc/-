@@ -1,0 +1,46 @@
+<!--pages/yuYue/yuYue.wxml-->
+<view class="doctor-item" wx:for="{{doctorInfo}}" wx:key="doctor_id">
+	<view class="icon">
+		<image src="{{item.icon}}"/>
+	</view>
+	<view class="info">
+		<view class="header">
+			<text class="doctor-name">{{item.doctor_name}}</text>
+			<text>{{item.zc_name}}</text>
+		</view>
+		<text class="num">预约量：{{item.total_yuyue_num}}</text>
+		<view class="ill" wx:if="{{item.ill_name_list}}">
+			<view class="ill_item" wx:for="{{ill_name_list}}" wx:key="index">
+				{{item}}
+			</view>
+		</view>
+		<view class="text" wx:else>擅长：{{item.expert}}</view>
+	</view>
+</view>
+
+<view class="shift" wx:for="{{shift_list}}" wx:key="index">
+	<view class="left">
+		<view class="top">
+			<view class="lleft">
+				{{item.to_date}}
+			</view>
+			<view class="lright" wx:if="{{item.time_type === 'am'}}">
+				上午
+			</view>
+			<view class="lright" wx:else="{{item.time_type === 'pm'}}">
+				下午
+			</view>
+		</view>
+		<view class="bottom">
+			<view class="lleft">
+				{{item.level_name}}
+			</view>
+			<view class="lright">
+				{{item.guahao_amt}}元
+			</view>
+		</view>
+	</view>
+	<view class="right" bindtap="guaHao" data-shift_id="{{item.shiftCaseId}}">
+		挂号
+	</view>
+</view>
